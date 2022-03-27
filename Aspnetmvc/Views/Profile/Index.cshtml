@@ -1,0 +1,20 @@
+﻿@model Aspnetmvc.Models.Profile.UserProfile
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<div class="bg-blue-gradient">
+    <div class="container">
+        <partial name="_HeaderPartial" />
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="card" style="width: 18rem;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">@Model.FirstName @Model.LastName</li>
+        <li class="list-group-item">@Model.Email</li>
+        <li class="list-group-item">@Model.StreetName - @Model.PostalCode</li>
+        <li class="list-group-item">@Model.City</li>
+      </ul>
+    </div>
+</div>
